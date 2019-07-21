@@ -40,10 +40,3 @@ func BuildSuccessResult(data interface{}) (resp []byte, err error) {
 func (result *BaseResult) isSuccess() (flag bool) {
 	return result.Code == DefaultSuccessCode
 }
-
-func main() {
-	var result *BaseResult = &BaseResult{}
-	if result.isSuccess() {
-
-	}
-}
